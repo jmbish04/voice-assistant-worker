@@ -1,11 +1,12 @@
 {
 	"name": "voice-assistant-worker",
 	"type": "module",
-	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "npm ci && npm run build && npx wrangler deploy --minify",
-		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
-	},
+  "scripts": {
+    "dev": "wrangler dev",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npx wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
 	"dependencies": {
 		"@ai-sdk/openai": "^1.3.23",
 		"agents": "^0.0.109",
