@@ -1,0 +1,2 @@
+HOST="https://your-deployed.worker.dev"
+OPENAI_API_KEY="1234"
